@@ -1,9 +1,9 @@
 #' Solve a sudoku
 #'
-#' This function solves a given sudoku board.
+#' This function solves any 9 by 9 sudoku board.
 #'
 #' @param board The sudoku grid in form of a numeric matrix you want to solve.
-#' @seealso sample_boards()
+#' @seealso `sample_boards()`, `easy_solve()`
 #' @return Logical vector of length 1. FALSE if the sudoku board is insolvable.
 #' @export
 #' @examples
