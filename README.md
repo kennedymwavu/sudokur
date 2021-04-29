@@ -6,7 +6,7 @@ The package is designed to solve any 9 by 9 sudoku grid.
 # Installing
 ```
 #install.packages(devtools)
-`devtools::install_github("KennedyMwavu/SudokuR")`
+devtools::install_github("KennedyMwavu/SudokuR")
 library(SudokuR)
 ```
 
