@@ -1,9 +1,13 @@
 #' Solve easy sudokus
 #'
 #' This function is designed strictly to solve easy sudokus ie. ones with more than
-#' 36 clues.
-#' Even though it might be faster than `solve_sudoku()`, it has one major drawback:
-#' it doesn't know if a sudoku is solvable or not.
+#' 36 clues, but it can sometimes solve medium hard sudokus (27 to 36 clues).
+#'
+#' It solves the sudoku deterministically and might be faster than `solve_sudoku()`, but
+#' it has two major drawbacks:
+#' can't determine if a sudoku  is solvable and can't also determine if it can solve
+#' a given sudoku. If it takes more than 2 seconds please use `solve_sudoku()`.
+#'
 #' Use carefully.
 #' @import magrittr
 #' @inheritParams solve_sudoku
@@ -11,7 +15,8 @@
 #' @export
 #' @seealso `solve_sudoku()`
 #' @examples
-#' easy_solve(given_board)
+#' b2 <- sample_boards()[[2]]
+#' easy_solve(b2)
 
 
 # Step 1: Understanding the problem.
@@ -47,9 +52,6 @@
 # Note: The algorithm can only solve easy (and probably medium hard) sudokus.
 
 easy_solve <- function(board) {
-  clues <- {board != 0} %>% which() %>% length()
-  if (clues < 36) stop("Clues MUST be greater than 36. Please use `solve_sudoku()`")
-
   while (0 %in% board) {
 
     for (column in 1:9) {
@@ -190,5 +192,6 @@ easy_solve <- function(board) {
   print_board(board)
   return(TRUE)
 }
+
 
 

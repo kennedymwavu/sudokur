@@ -10,11 +10,10 @@ solve_sudoku(board)
 \item{board}{The sudoku grid in form of a numeric matrix you want to solve.}
 }
 \value{
-TRUE or FALSE indicating if the given board is solvable or not
+Logical vector of length 1. FALSE if the sudoku board is insolvable.
 }
 \description{
-This function solves a given sudoku board. If a sudoku is insolvable it returns
-FALSE
+This function solves any 9 by 9 sudoku board.
 }
 \examples{
 b3 <- sample_boards()[[1]]
@@ -22,5 +21,5 @@ print_board(b3)
 solve_sudoku(b3)
 }
 \seealso{
-sample_boards()
+\code{sample_boards()}, \code{easy_solve()}
 }
