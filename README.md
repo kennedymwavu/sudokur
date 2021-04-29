@@ -3,14 +3,14 @@ Solve Sudoku.
 
 The package is designed to solve any 9 by 9 sudoku grid.
 
-# Installing
+## Installing
 ```R
 #install.packages(devtools)
 devtools::install_github("KennedyMwavu/SudokuR")
 library(SudokuR)
 ```
 
-# Usage
+## Usage
 To show a few pre-made sudoku grids: 
 ```R
 sample_boards()[[1]]
