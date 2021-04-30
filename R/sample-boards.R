@@ -1,6 +1,7 @@
 #' Sample sudoku grids
 #'
-#' This function displays a list of 8 sudoku boards which you can try to solve.
+#' This function displays a list of 9 sudoku boards which you can try to solve, with
+#' board0 being the easiest and board9 the hardest.
 #'
 #' @return a list of boards
 #' @export
@@ -14,6 +15,21 @@
 
 sample_boards <- function() {
   all_boards = list(
+    board0 = matrix(
+      data = c(
+        2, 3, 0, 4, 9, 7, 0, 8, 0,
+        0, 9, 5, 0, 0, 6, 4, 0, 7,
+        0, 6, 0, 5, 8, 0, 0, 1, 2,
+        0, 7, 8, 3, 0, 4, 0, 0, 9,
+        0, 4, 0, 0, 0, 0, 0, 5, 0,
+        0, 0, 2, 8, 1, 9, 3, 7, 0,
+        0, 8, 6, 2, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 7, 0, 0, 0, 0,
+        7, 0, 0, 0, 3, 1, 0, 6, 5
+      ),
+      byrow = TRUE, ncol = 9
+    ),
+
     board1 = matrix(data =
                        c(5, 6, 0, 8, 4, 7, 0, 0, 0,
                          3, 0, 9, 0, 0, 0, 6, 0, 0,
