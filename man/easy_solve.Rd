@@ -14,13 +14,19 @@ if sudoku is solvable it returns TRUE
 }
 \description{
 This function is designed strictly to solve easy sudokus ie. ones with more than
-36 clues.
-Even though it might be faster than \code{solve_sudoku()}, it has one major drawback:
-it doesn't know if a sudoku is solvable or not.
+36 clues, but it can sometimes solve medium hard sudokus (27 to 36 clues).
+}
+\details{
+It solves the sudoku deterministically and might be faster than \code{solve_sudoku()}, but
+it has two major drawbacks:
+can't determine if a sudoku  is solvable and can't also determine if it can solve
+a given sudoku. If it takes more than 2 seconds please use \code{solve_sudoku()}.
+
 Use carefully.
 }
 \examples{
-easy_solve(given_board)
+b2 <- sample_boards()[[2]]
+easy_solve(b2)
 }
 \seealso{
 \code{solve_sudoku()}
