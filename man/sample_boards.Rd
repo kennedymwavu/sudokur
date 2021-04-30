@@ -10,7 +10,8 @@ sample_boards()
 a list of boards
 }
 \description{
-This function displays a list of 8 sudoku boards which you can try to solve.
+This function displays a list of 9 sudoku boards which you can try to solve, with
+board0 being the easiest and board9 the hardest.
 }
 \examples{
 b1 <- sample_boards()[[1]]
