@@ -68,7 +68,8 @@ solve_sudoku(samples$board6)
 Example:
 ```R
 easy_solve(board = samples$board0)
-=======
+```
+
 To pretty print a sudoku so that it doesn't appear as an ugly R matrix:
 ```R
 print_board(board1)
