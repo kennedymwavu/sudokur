@@ -1,5 +1,4 @@
 # {SudokuR}
-Solve Sudoku.
 
 The package is designed to solve any 9 by 9 sudoku grid using the backtracking algorithm.
 
