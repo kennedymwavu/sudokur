@@ -5,6 +5,7 @@
 #'
 #' @param board A sudoku board/grid.
 #' @export
+#' @return `board` (invisibly)
 #' @examples
 #' # sample board:
 #' board <- matrix(data =
@@ -84,4 +85,5 @@ print_board <- function(board) {
     }
   }
 
+  return(invisible(board))
 }

@@ -9,6 +9,9 @@ print_board(board)
 \arguments{
 \item{board}{A sudoku board/grid.}
 }
+\value{
+\code{board} (invisibly)
+}
 \description{
 This function prints a 9 by 9 sudoku board in a way that is appealing to the eye,
 rather than an R matrix.
