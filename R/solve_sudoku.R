@@ -14,6 +14,11 @@
 
 # main:
 solve_sudoku <- function(board) {
+  stopifnot(
+    '`board` must be a numeric matrix' = is.numeric(board) && is.matrix(board),
+    '`board` must a 9 by 9 matrix' = identical(dim(board), c(9L, 9L))
+  )
+
 	find <- find_empty(board)
 
 	# if there's no empty box, print the filled board and return True
