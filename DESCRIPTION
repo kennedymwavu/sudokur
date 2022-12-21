@@ -15,5 +15,5 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
 imports: magrittr
-URL: https://github.com/KennedyMwavu/sudokur
-BugReports: https://github.com/KennedyMwavu/sudokur/issues
+URL: https://github.com/kennedymwavu/sudokur
+BugReports: https://github.com/kennedymwavu/sudokur/issues
