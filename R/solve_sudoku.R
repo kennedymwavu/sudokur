@@ -2,9 +2,10 @@
 #'
 #' This function solves any 9 by 9 sudoku board.
 #'
-#' @param board The sudoku grid in form of a numeric matrix you want to solve.
+#' @param board The 9 by 9 sudoku grid in form of a numeric matrix.
 #' @seealso `sample_boards()`, `easy_solve()`
-#' @return Logical vector of length 1. FALSE if the sudoku board is insolvable.
+#' @return Invisibly returns a logical vector of length 1.
+#' `FALSE` if the sudoku board is insolvable.
 #' @export
 #' @examples
 #' b3 <- sample_boards()[[1]]
@@ -18,7 +19,7 @@ solve_sudoku <- function(board) {
 	# if there's no empty box, print the filled board and return True
 	if (is.null(find)) {
 	  print_board(board)
-	  return(TRUE)
+	  return(invisible(TRUE))
 	}
 
 	row <- find[[1]]
@@ -31,11 +32,11 @@ solve_sudoku <- function(board) {
 			# Recall that solve has a return value of either TRUE or FALSE.
 			# If the return value is TRUE, then return TRUE to the previous caller, else
 			# (re)set that cell to 0.
-			if (solve_sudoku(board)) return(TRUE)
+			if (solve_sudoku(board)) return(invisible(TRUE))
 			board[row, col] <- 0
 		}
 	}
-	return(FALSE)
+	return(invisible(FALSE))
 }
 
 
