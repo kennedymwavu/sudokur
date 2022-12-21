@@ -3,7 +3,7 @@
 #' This function solves any 9 by 9 sudoku board.
 #'
 #' @param board The 9 by 9 sudoku grid in form of a numeric matrix.
-#' @seealso `sample_boards()`, `easy_solve()`
+#' @seealso [sudokur::sample_boards()], [sudokur::easy_solve()]
 #' @return Invisibly returns a logical vector of length 1.
 #' `FALSE` if the sudoku board is insolvable.
 #' @export

@@ -22,5 +22,5 @@ print_board(b3)
 solve_sudoku(b3)
 }
 \seealso{
-\code{sample_boards()}, \code{easy_solve()}
+\code{\link[=sample_boards]{sample_boards()}}, \code{\link[=easy_solve]{easy_solve()}}
 }
