@@ -48,7 +48,7 @@ board1 <- matrix(
 
 ### Pretty print a sudoku grid
 
-To pretty print a sudoku so that it use `print_board(given_board)`.
+To pretty print a sudoku grid use `print_board(given_board)`.
 
 Example:
 
@@ -90,5 +90,4 @@ solve_sudoku(samples$board6)
 #> 7  5  4   ||  3  1  2   ||  6  9  8  
 #> 8  9  3   ||  7  4  6   ||  5  1  2  
 #> 1  2  6   ||  9  5  8   ||  3  7  4
-#> [1] TRUE
 ```
