@@ -5,8 +5,8 @@ The package is designed to solve any 9 by 9 sudoku grid using the backtracking a
 ## Installing
 ```R
 #install.packages(devtools)
-devtools::install_github("KennedyMwavu/SudokuR")
-library(SudokuR)
+devtools::install_github("KennedyMwavu/sudokur")
+library(sudokur)
 ```
 
 ## Usage
